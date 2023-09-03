@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import SearchIcon from "@mui/icons-material/Search";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { codersclubLogo2 } from "../assets";
@@ -9,8 +8,8 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="bg-base-100 shadow-md w-full px-6 py-3">
-      <nav className="container w-11/12 md:w-10/12 m-auto flex flex-wrap items-center justify-between p-3">
+    <header className="bg-base-100 shadow-md w-full px-2 sm:px-6 py-3">
+      <nav className="container w-11/12 md:w-10/12 m-auto flex flex-wrap items-center justify-between p-2 sm:p-3">
         <Link to="/" className="text-gray-800 text-xl font-bold">
           <img src={codersclubLogo2} alt="Company Logo" className="w-[150px]" />
         </Link>
@@ -35,6 +34,12 @@ const Navbar = () => {
         >
           <div className="text-sm md:flex-grow">
             <Link
+              to="/"
+              className="block mt-4 md:inline-block md:mt-0 text-gray-700 hover:text-gray-800 mx-3"
+            >
+              Home
+            </Link>
+            <Link
               to="/about"
               className="block mt-4 md:inline-block md:mt-0 text-gray-700 hover:text-gray-800 mx-3"
             >
@@ -45,6 +50,12 @@ const Navbar = () => {
               className="block mt-4 md:inline-block md:mt-0 text-gray-700 hover:text-gray-800 mx-3"
             >
               Members
+            </Link>
+            <Link
+              to="/contact"
+              className="block mt-4 md:inline-block md:mt-0 text-gray-700 hover:text-gray-800 mx-3"
+            >
+              Contact Us
             </Link>
           </div>
           

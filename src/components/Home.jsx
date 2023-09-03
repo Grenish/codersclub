@@ -24,15 +24,17 @@ const Home = () => {
           </h3>
           <p className="text-2xl font-bold text-gray-800">{latestArticle.id}</p>
         </div>
+        <Link to="/members">
+          <div className="h-auto p-4 rounded-lg bg-gray-100 flex flex-col justify-center items-center">
+            <h3 className="text-lg font-bold text-gray-600 mb-2">
+              Total Members
+            </h3>
+            <p className="text-2xl font-bold text-gray-800">{totalMembers}</p>
+          </div>
+        </Link>
         <div className="h-auto p-4 rounded-lg bg-gray-100 flex flex-col justify-center items-center">
           <h3 className="text-lg font-bold text-gray-600 mb-2">
-            Total Members
-          </h3>
-          <p className="text-2xl font-bold text-gray-800">{totalMembers}</p>
-        </div>
-        <div className="h-auto p-4 rounded-lg bg-gray-100 flex flex-col justify-center items-center">
-          <h3 className="text-lg font-bold text-gray-600 mb-2">
-            Total Workshop
+            No. Of Workshops
           </h3>
           <p className="text-2xl font-bold text-gray-800">0</p>
         </div>
@@ -71,9 +73,14 @@ const Home = () => {
       </div>
 
       <div className="my-8">
-        <h2 className="text-2xl font-semibold text-gray-700 mb-6 text-center">
-          All Articles
-        </h2>
+        <span className="flex justify-between">
+          <h2 className="text-2xl font-semibold text-gray-700">All Articles</h2>
+          <Link to="/articles">
+            <button className="text-sm font-ligh text-gray-700">
+              View All
+            </button>
+          </Link>
+        </span>
         {blogArticles.map((article) => (
           <article
             key={article.id}

@@ -48,7 +48,7 @@ const Members = () => {
             return (
               <div
                 key={member.id}
-                className="bg-base-100 rounded-lg shadow-md p-6 flex flex-col items-center transform hover:scale-105 transition-transform"
+                className="bg-base-100 rounded-lg shadow-md p-4 flex flex-col items-center transform hover:scale-105 transition-transform"
               >
                 <img
                   src={member.photoUrl}
