@@ -5,6 +5,8 @@ import Home from "./Home";
 import Members from "./Members";
 import Navbar from "./Navbar";
 import About from "./About";
+import Contact from "./Contact";
+import Articles from "./Articles";
 
 export {
   BlogArticle,
@@ -14,4 +16,6 @@ export {
   Home,
   Members,
   About,
+  Contact,
+  Articles,
 };
