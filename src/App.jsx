@@ -5,7 +5,9 @@ import {
   Members,
   About,
   Blogs,
-  BlogArticle, // Remember to import BlogArticle
+  BlogArticle,
+  Contact,
+  Articles,
 } from "./components";
 import { Routes, Route } from "react-router-dom";
 
@@ -19,6 +21,8 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/article/:id" element={<BlogArticle />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/articles" element={<Articles />} />
       </Routes>
     </div>
   );
