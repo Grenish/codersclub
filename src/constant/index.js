@@ -10,7 +10,7 @@ export const members = [
   },
   {
     id: 2,
-    name: "Anish",
+    name: "Anish Acharya",
     photoUrl: anish,
     github: "https://github.com/Daddy-anish",
   },
@@ -46,7 +46,7 @@ export const members = [
   },
   {
     id: 8,
-    name: "Rohan",
+    name: "Rohan Bezwada",
     photoUrl: profile,
     github: "",
   },
