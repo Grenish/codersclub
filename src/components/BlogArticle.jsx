@@ -20,8 +20,8 @@ const BlogArticle = () => {
   return (
     <div className="p-8 lg:p-16 bg-gray-200 min-h-screen">
       <div className="mb-5">
-        <Link to="/">
-          <button className="bg-base-100 hover:bg-gray-200 transition-colors p-2 flex items-center gap-2 rounded-xl">
+        <Link to="/articles">
+          <button className="bg-base-100 hover:bg-accent transition-colors p-2 flex items-center gap-2 rounded-xl">
             <img src={codersclubFavicon} alt="" className="w-7" /> Go Back
           </button>
         </Link>
@@ -33,8 +33,9 @@ const BlogArticle = () => {
         <article className="space-y-8 text-gray-700 text-lg leading-6">
           <div className="flex justify-between items-center">
             <p className="font-bold">{article.postedBy}</p>
-            <p className="text-neutral opacity-25">{article.postedOn}</p>
+            <p className="text-neutral">{article.postedOn}</p>
           </div>
+
           {article.content.map((section, index) => {
             const Section = section.type === "heading" ? "h2" : "p";
             return (
@@ -42,7 +43,7 @@ const BlogArticle = () => {
                 <Section
                   className={
                     section.type === "heading"
-                      ? "text-2xl text-info font-bold"
+                      ? "text-2xl text-secondary font-bold"
                       : "text-lg leading-6"
                   }
                 >
@@ -57,6 +58,17 @@ const BlogArticle = () => {
               </div>
             );
           })}
+          <div className="flex space-x-3">
+            {article.imageUrl &&
+              article.imageUrl.map((imgUrl, index) => (
+                <img
+                  key={index}
+                  src={imgUrl}
+                  alt={`Image ${index + 1} for ${article.title}`}
+                  className="w-28 object-cover rounded-md my-4"
+                />
+              ))}
+          </div>
         </article>
       </main>
     </div>
