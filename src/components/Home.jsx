@@ -1,34 +1,106 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { SectionWrapper } from "../hoc";
 import { blogArticles } from "../data/blogs";
-import { smitlogo, codersclubLogo } from "../assets";
+import { members } from "../constant";
+import { smitlogo } from "../assets";
 
 const Home = () => {
+  const sortedArticles = blogArticles.sort(
+    (a, b) => new Date(b.postedOn) - new Date(a.postedOn)
+  );
+  const latestArticle = sortedArticles[0];
+
+  const totalMembers = members.length;
+
   return (
-    <div>
-      <div className="flex flex-col justify-center items-center">
-        <img src={smitlogo} alt="" className="w-[250px]"/>
-        <img src={codersclubLogo} alt="" className="w-[250px]"/>
+    <div className="px-4 py-8 max-w-7xl mx-auto">
+      <div className="">
+        <img src={smitlogo} alt="SMIT Logo" className="w-[250px] mx-auto" />
+      </div>
+      <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8 p-6">
+        <div className="h-auto p-4 rounded-lg bg-gray-100 flex flex-col justify-center items-center">
+          <h3 className="text-lg font-bold text-gray-600 mb-2">
+            Total Meetings
+          </h3>
+          <p className="text-2xl font-bold text-gray-800">{latestArticle.id}</p>
+        </div>
+        <div className="h-auto p-4 rounded-lg bg-gray-100 flex flex-col justify-center items-center">
+          <h3 className="text-lg font-bold text-gray-600 mb-2">
+            Total Members
+          </h3>
+          <p className="text-2xl font-bold text-gray-800">{totalMembers}</p>
+        </div>
+        <div className="h-auto p-4 rounded-lg bg-gray-100 flex flex-col justify-center items-center">
+          <h3 className="text-lg font-bold text-gray-600 mb-2">
+            Total Workshop
+          </h3>
+          <p className="text-2xl font-bold text-gray-800">0</p>
+        </div>
       </div>
 
-      <div className="flex flex-col items-center justify-center py-10">
-        {blogArticles.map((article) => (
-          <div
-            className="bg-primary max-w-md w-full px-8 py-6 shadow-lg text-gray-800 mb-10 rounded-xl"
-            key={article.id}
-          >
-            <h2 className="text-2xl font-bold mb-4">{article.title}</h2>
-            <p className="mb-6">{article.content[0]?.text}</p>
-            <Link
-              to={`/article/${article.id}`}
-              style={{ textDecoration: "none" }}
-            >
-              <button className="bg-info hover:bg-blue-700 text-neutral font-bold py-2 px-4 rounded">
-                Read Now
-              </button>
+      <div className="my-8">
+        <h2 className="text-2xl font-semibold text-gray-700 mb-6 text-center">
+          Latest
+        </h2>
+        <article
+          key={latestArticle.id}
+          className="rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:shadow-sm"
+        >
+          <div className="rounded-[10px] bg-white p-4 !pt-20 sm:p-6">
+            <time className="block text-xs text-gray-500">
+              {latestArticle.postedOn}
+            </time>
+
+            <Link to={`/article/${latestArticle.id}`}>
+              <h3 className="mt-0.5 text-lg font-bold text-gray-900">
+                {latestArticle.title}
+              </h3>
+              <p className="mb-6">{latestArticle.content[0]?.text}</p>
             </Link>
+
+            <div className="mt-4 flex flex-wrap gap-1">
+              <span className="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+                {latestArticle.postedBy}
+              </span>
+              <span className="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+                {latestArticle.tags}
+              </span>
+            </div>
           </div>
+        </article>
+      </div>
+
+      <div className="my-8">
+        <h2 className="text-2xl font-semibold text-gray-700 mb-6 text-center">
+          All Articles
+        </h2>
+        {blogArticles.map((article) => (
+          <article
+            key={article.id}
+            className="rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:shadow-sm my-4"
+          >
+            <div className="rounded-[10px] bg-white p-4 !pt-20 sm:p-6">
+              <time className="block text-xs text-gray-500">
+                {article.postedOn}
+              </time>
+
+              <Link to={`/article/${article.id}`}>
+                <h3 className="mt-0.5 text-lg font-bold text-gray-900">
+                  {article.title}
+                </h3>
+                <p className="mb-6">{article.content[0]?.text}</p>
+              </Link>
+
+              <div className="mt-4 flex flex-wrap gap-1">
+                <span className="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+                  {article.postedBy}
+                </span>
+                <span className="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+                  {article.tags}
+                </span>
+              </div>
+            </div>
+          </article>
         ))}
       </div>
     </div>
