@@ -1,34 +1,35 @@
 import { profile } from "../assets";
+import { grenish, yashraj, ayush, gagan, anish, kunsang } from "../members";
 
 export const members = [
   {
     id: 1,
     name: "Ayush Baral",
-    photoUrl: profile,
+    photoUrl: ayush,
     github: "https://github.com/codeayush-7",
   },
   {
     id: 2,
     name: "Anish",
-    photoUrl: profile,
-    github: "",
+    photoUrl: anish,
+    github: "https://github.com/Daddy-anish",
   },
   {
     id: 3,
     name: "Gagan Sarma",
-    photoUrl: profile,
+    photoUrl: gagan,
     github: "https://github.com/Gags-1",
   },
   {
     id: 4,
     name: "Grenish Rai",
-    photoUrl: profile,
+    photoUrl: grenish,
     github: "https://github.com/Grenish",
   },
   {
     id: 5,
-    name: "Kunsaqng",
-    photoUrl: profile,
+    name: "Kunsang Moktan",
+    photoUrl: kunsang,
     github: "https://github.com/jojosCodeBase",
   },
   {
@@ -39,9 +40,9 @@ export const members = [
   },
   {
     id: 7,
-    name: "Yash",
-    photoUrl: profile,
-    github: "",
+    name: "Yashraj Sharma",
+    photoUrl: yashraj,
+    github: "https://github.com/yashraj2002",
   },
   {
     id: 8,
