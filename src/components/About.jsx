@@ -57,7 +57,7 @@ const About = () => {
             <ul className="list-disc list-inside space-y-2 text-gray-700">
               {missionPoints.map((point, index) => (
                 <li key={index}>
-                  <span className="font-bold">{point.title}:</span>
+                  <span className="font-bold">{point.title}:</span>{" "}
                   {point.description}
                 </li>
               ))}
