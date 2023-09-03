@@ -4,6 +4,7 @@ export const blogArticles = [
     title: "First Meeting (Summary)",
     postedOn: "01-09-2023",
     postedBy: "codersclub",
+    tags: "online",
     content: [
       {
         type: "heading",
