@@ -6,4 +6,12 @@ import Members from "./Members";
 import Navbar from "./Navbar";
 import About from "./About";
 
-export { BlogArticle, Blogs, Navbar, Cards, Home, Members, About };
+export {
+  BlogArticle,
+  Blogs,
+  Navbar,
+  Cards,
+  Home,
+  Members,
+  About,
+};
