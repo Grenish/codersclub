@@ -4,6 +4,7 @@ import gagan from './gagan.jpg';
 import yashraj from './yashraj.jpg';
 import kunsang from './kunsang.jpg';
 import anish from './anish.jpg';
+import ronak from './ronak.jpg';
 
 export{
     grenish,
@@ -11,5 +12,6 @@ export{
     gagan,
     yashraj,
     kunsang,
-    anish
+    anish,
+    ronak
 }
