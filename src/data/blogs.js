@@ -34,4 +34,33 @@ export const blogArticles = [
       },
     ],
   },
+  {
+    id: 2,
+    title: "Second Meeting (Summary)",
+    postedOn: "04-09-2023",
+    postedBy: "codersclub",
+    tags: "offline",
+    content: [
+      {
+        id: 1,
+        type: "heading",
+        text: "About the workshop",
+        subPoints: [
+          "The tentative date of the workshop is finalized to 13-09-2023.",
+          "A Google Form will be circulated among the first year students to gauge the interest level.",
+          "The maximum number of participants for the workshop is limited to 25.",
+          "After successful organization of the workshop, we'll create a feedback form for the participants to improve future workshops.",
+          "Programs and PPTs will be shared by Dipendra Sir to the members for future reference.",
+        ],
+      },
+      {
+        id: 2,
+        type: "heading",
+        text: "Real World Projects Interest Group",
+        subPoints: [
+          "Members have decided to form a group for students who share common interests and want to work on real world projects to develop their skills.",
+        ],
+      },
+    ],
+  },
 ];
