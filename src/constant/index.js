@@ -1,4 +1,3 @@
-import { profile } from "../assets";
 import {
   grenish,
   yashraj,
@@ -10,7 +9,10 @@ import {
   naveen,
   ayushsarkar,
   soumyadip,
-  dipendra
+  admin,
+  newsun,
+  rohan,
+  souvik,
 } from "../members";
 
 export const members = [
@@ -47,8 +49,8 @@ export const members = [
   {
     id: 6,
     name: "Tasso",
-    photoUrl: profile,
-    github: "",
+    photoUrl: rohan,
+    github: "https://github.com/",
   },
   {
     id: 7,
@@ -59,20 +61,20 @@ export const members = [
   {
     id: 8,
     name: "Rohan Bezewada",
-    photoUrl: profile,
-    github: "",
+    photoUrl: rohan,
+    github: "https://github.com/",
   },
   {
     id: 9,
     name: "Ronak Tamang",
     photoUrl: ronak,
-    github: "",
+    github: "https://github.com/",
   },
   {
     id: 10,
     name: "Newsun Neupane",
-    photoUrl: profile,
-    github: "",
+    photoUrl: newsun,
+    github: "https://github.com/newsunneupane",
   },
   {
     id: 11,
@@ -84,39 +86,39 @@ export const members = [
     id: 12,
     name: "Soumyadip Chowdhury",
     photoUrl: soumyadip,
-    github: "",
+    github: "https://github.com/",
   },
   {
     id: 13,
-    name: "Lorem",
-    photoUrl: profile,
+    name: "Souvik Poddar",
+    photoUrl: souvik,
     github: "",
   },
   {
     id: 14,
     name: "Lorem",
-    photoUrl: profile,
+    photoUrl: rohan,
     github: "",
   },
   {
     id: 15,
     name: "Lorem",
-    photoUrl: profile,
+    photoUrl: rohan,
     github: "",
   },
   {
     id: 16,
     name: "Ayush Sarkar",
     photoUrl: ayushsarkar,
-    github: "",
-  }
+    github: "https://github.com/",
+  },
 ];
 
 export const coordinators = [
   {
     id: 1,
     name: "Dipendra Gurung",
-    photoUrl: profile,
+    photoUrl: admin,
   },
 ];
 
