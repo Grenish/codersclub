@@ -1,5 +1,14 @@
 import { profile } from "../assets";
-import { grenish, yashraj, ayush, gagan, anish, kunsang, ronak } from "../members";
+import {
+  grenish,
+  yashraj,
+  ayush,
+  gagan,
+  anish,
+  kunsang,
+  ronak,
+  naveen,
+} from "../members";
 
 export const members = [
   {
@@ -46,7 +55,7 @@ export const members = [
   },
   {
     id: 8,
-    name: "Rohan Bezwada",
+    name: "Rohan Bezewada",
     photoUrl: profile,
     github: "",
   },
@@ -65,8 +74,8 @@ export const members = [
   {
     id: 11,
     name: "Naveen Kumar Rai",
-    photoUrl: profile,
-    github: "",
+    photoUrl: naveen,
+    github: "https://github.com/KumarNaveenRai",
   },
   {
     id: 12,
@@ -91,7 +100,7 @@ export const members = [
     name: "Lorem",
     photoUrl: profile,
     github: "",
-  }
+  },
 ];
 
 export const coordinators = [
