@@ -1,5 +1,5 @@
 import { profile } from "../assets";
-import { grenish, yashraj, ayush, gagan, anish, kunsang } from "../members";
+import { grenish, yashraj, ayush, gagan, anish, kunsang, ronak } from "../members";
 
 export const members = [
   {
@@ -52,8 +52,8 @@ export const members = [
   },
   {
     id: 9,
-    name: "Lorem",
-    photoUrl: profile,
+    name: "Ronak Tamang",
+    photoUrl: ronak,
     github: "",
   },
   {
