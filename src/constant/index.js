@@ -80,6 +80,18 @@ export const members = [
     photoUrl: profile,
     github: "",
   },
+  {
+    id: 14,
+    name: "Naveen Kumar Rai",
+    photoUrl: profile,
+    github: "",
+  },
+  {
+    id: 15,
+    name: "Newsun Neupane",
+    photoUrl: profile,
+    github: "",
+  }
 ];
 
 export const coordinators = [
