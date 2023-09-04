@@ -6,6 +6,9 @@ import kunsang from './kunsang.jpg';
 import anish from './anish.jpg';
 import ronak from './ronak.jpg';
 import naveen from './naveen.jpg';
+import ayushsarkar from './ayushsarkar.jpg';
+import soumyadip from './soumyadip.jpg';
+import dipendra  from './dipendra.jpg';
 
 export{
     grenish,
@@ -15,5 +18,8 @@ export{
     kunsang,
     anish,
     ronak,
-    naveen
+    naveen,
+    ayushsarkar,
+    soumyadip,
+    dipendra
 }
