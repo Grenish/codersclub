@@ -58,13 +58,13 @@ export const members = [
   },
   {
     id: 10,
-    name: "Lorem",
+    name: "Newsun Neupane",
     photoUrl: profile,
     github: "",
   },
   {
     id: 11,
-    name: "Lorem",
+    name: "Naveen Kumar Rai",
     photoUrl: profile,
     github: "",
   },
@@ -82,13 +82,13 @@ export const members = [
   },
   {
     id: 14,
-    name: "Naveen Kumar Rai",
+    name: "Lorem",
     photoUrl: profile,
     github: "",
   },
   {
     id: 15,
-    name: "Newsun Neupane",
+    name: "Lorem",
     photoUrl: profile,
     github: "",
   }
