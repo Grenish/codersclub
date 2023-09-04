@@ -116,7 +116,7 @@ export const coordinators = [
   {
     id: 1,
     name: "Dipendra Gurung",
-    photoUrl: dipendra,
+    photoUrl: profile,
   },
 ];
 
