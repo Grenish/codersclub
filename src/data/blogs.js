@@ -46,7 +46,7 @@ export const blogArticles = [
         type: "heading",
         text: "About the workshop",
         subPoints: [
-          "The tentative date of the workshop is finalized to 13-09-2023.",
+          "The tentative date of the workshop is finalized to 14-09-2023.",
           "A Google Form will be circulated among the first year students to gauge the interest level.",
           "The maximum number of participants for the workshop is limited to 25.",
           "After successful organization of the workshop, we'll create a feedback form for the participants to improve future workshops.",
