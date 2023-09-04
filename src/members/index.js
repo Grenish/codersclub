@@ -9,6 +9,10 @@ import naveen from './naveen.jpg';
 import ayushsarkar from './ayushsarkar.jpg';
 import soumyadip from './soumyadip.jpg';
 import dipendra  from './dipendra.jpg';
+import newsun from './newsun.jpg';
+import admin from './admin.jpg';
+import rohan from './rohan.jpg';
+import souvik from './souvik.jpg';
 
 export{
     grenish,
@@ -21,5 +25,9 @@ export{
     naveen,
     ayushsarkar,
     soumyadip,
-    dipendra
+    dipendra,
+    newsun,
+    admin,
+    rohan,
+    souvik,
 }
