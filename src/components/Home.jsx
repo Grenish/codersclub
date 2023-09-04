@@ -18,12 +18,16 @@ const Home = () => {
         <img src={smitlogo} alt="SMIT Logo" className="w-[250px] mx-auto" />
       </div>
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8 p-6">
-        <div className="h-auto p-4 rounded-lg bg-gray-100 flex flex-col justify-center items-center">
-          <h3 className="text-lg font-bold text-gray-600 mb-2">
-            Total Meetings
-          </h3>
-          <p className="text-2xl font-bold text-gray-800">{latestArticle.id}</p>
-        </div>
+        <Link to="/articles">
+          <div className="h-auto p-4 rounded-lg bg-gray-100 flex flex-col justify-center items-center">
+            <h3 className="text-lg font-bold text-gray-600 mb-2">
+              Total Meetings
+            </h3>
+            <p className="text-2xl font-bold text-gray-800">
+              {latestArticle.id}
+            </p>
+          </div>
+        </Link>
         <Link to="/members">
           <div className="h-auto p-4 rounded-lg bg-gray-100 flex flex-col justify-center items-center">
             <h3 className="text-lg font-bold text-gray-600 mb-2">
