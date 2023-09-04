@@ -8,6 +8,9 @@ import {
   kunsang,
   ronak,
   naveen,
+  ayushsarkar,
+  soumyadip,
+  dipendra
 } from "../members";
 
 export const members = [
@@ -79,8 +82,8 @@ export const members = [
   },
   {
     id: 12,
-    name: "Lorem",
-    photoUrl: profile,
+    name: "Soumyadip Chowdhury",
+    photoUrl: soumyadip,
     github: "",
   },
   {
@@ -101,13 +104,19 @@ export const members = [
     photoUrl: profile,
     github: "",
   },
+  {
+    id: 16,
+    name: "Ayush Sarkar",
+    photoUrl: ayushsarkar,
+    github: "",
+  }
 ];
 
 export const coordinators = [
   {
     id: 1,
     name: "Dipendra Gurung",
-    photoUrl: profile,
+    photoUrl: dipendra,
   },
 ];
 
