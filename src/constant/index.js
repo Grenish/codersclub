@@ -96,7 +96,7 @@ export const members = [
   },
   {
     id: 14,
-    name: "Lorem",
+    name: "Shubam Dewan",
     photoUrl: rohan,
     github: "",
   },
