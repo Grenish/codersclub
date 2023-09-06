@@ -13,6 +13,7 @@ import {
   newsun,
   rohan,
   souvik,
+  tasso,
 } from "../members";
 
 export const members = [
@@ -48,8 +49,8 @@ export const members = [
   },
   {
     id: 6,
-    name: "Tasso",
-    photoUrl: rohan,
+    name: "Tasso Hibung",
+    photoUrl: tasso,
     github: "https://github.com/",
   },
   {

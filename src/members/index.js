@@ -13,6 +13,7 @@ import newsun from './newsun.jpg';
 import admin from './admin.jpg';
 import rohan from './rohan.jpg';
 import souvik from './souvik.jpg';
+import tasso from './tasso.jpg';
 
 export{
     grenish,
@@ -30,4 +31,5 @@ export{
     admin,
     rohan,
     souvik,
+    tasso
 }
