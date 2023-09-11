@@ -14,6 +14,7 @@ import admin from './admin.jpg';
 import rohan from './rohan.jpg';
 import souvik from './souvik.jpg';
 import tasso from './tasso.jpg';
+import subham from './subham.jpg';
 
 export{
     grenish,
@@ -31,5 +32,6 @@ export{
     admin,
     rohan,
     souvik,
-    tasso
+    tasso,
+    subham
 }
