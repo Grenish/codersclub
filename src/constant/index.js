@@ -14,6 +14,7 @@ import {
   rohan,
   souvik,
   tasso,
+  subham,
 } from "../members";
 
 export const members = [
@@ -103,8 +104,8 @@ export const members = [
   },
   {
     id: 15,
-    name: "Lorem",
-    photoUrl: rohan,
+    name: "Subham",
+    photoUrl: subham,
     github: "",
   },
   {
