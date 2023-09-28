@@ -31,8 +31,8 @@ const BlogArticle = () => {
           {article.title}
         </h1>
         <article className="space-y-8 text-gray-700 text-lg leading-6">
-          <div className="flex justify-between items-center">
-            <p className="font-bold">{article.postedBy}</p>
+          <div className="flex justify-end">
+            {/* <p className="font-bold">{article.postedBy}</p> */}
             <p className="text-neutral">{article.postedOn}</p>
           </div>
 
