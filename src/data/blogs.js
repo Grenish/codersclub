@@ -1,3 +1,5 @@
+import { smitlogo } from "../assets";
+
 export const blogArticles = [
   {
     id: 1,
@@ -59,6 +61,32 @@ export const blogArticles = [
         text: "Real World Projects Interest Group",
         subPoints: [
           "Members have decided to form a group for students who share common interests and want to work on real world projects to develop their skills.",
+        ],
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "C Programming Workshop",
+    postedOn: "28-09-2023",
+    postedBy: "codersclub",
+    tags: "announcement",
+    content: [
+      {
+        id: 1,
+        type: "heading",
+        text: "It's True, We're Organizing a C Programming Workshop",
+        subPoints: [
+          "For the first time in CA Department, CodersClub is organizing a C Programming Workshop for the first year students.",
+          "You'll learn a lots of things in this workshop, including basics of C programming, data types, operators and many more.",
+        ],
+      },
+      {
+        id: 2,
+        type: "paragraph",
+        subPoints: [
+          "Venue : CA LAB\n",
+          "Time: 05:00 PM",
         ],
       },
     ],
