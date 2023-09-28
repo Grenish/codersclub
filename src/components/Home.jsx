@@ -6,9 +6,12 @@ import { smitlogo } from "../assets";
 
 const Home = () => {
   const sortedArticles = blogArticles.sort(
-    (a, b) => new Date(b.postedOn) - new Date(a.postedOn)
+    (a, b) => new Date(b.id) - new Date(a.id)
   );
-  const latestArticle = sortedArticles[0];
+
+  const latestArticle = sortedArticles.reduce((prev, current) =>
+    prev.postedOn > current.postedOn ? prev : current
+  );
 
   const totalMembers = members.length;
 
