@@ -78,7 +78,7 @@ export const blogArticles = [
         text: "It's True, We're Organizing a C Programming Workshop",
         subPoints: [
           "For the first time in CA Department, CodersClub is organizing a C Programming Workshop for the first year students.",
-          "You'll learn a lots of things in this workshop, including basics of C programming, data types, operators and many more.",
+          "You'll learn a lot of things in this workshop, including the basics of C programming, data types, operators, and many more.",
         ],
       },
       {
